@@ -1,0 +1,57 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+hienthi                                                                           0x01A4      16
+flag_2s                                                                           0x01B4       1
+rx_buffer                                                                         0x01B5       7
+rx_index                                                                          0x01BC       1
+_base_y (alcd.lib)                                                                0x01BD       4
+_lcd_x                                                                            0x01C1       1
+_lcd_y                                                                            0x01C2       1
+_lcd_maxx                                                                         0x01C3       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+pm25_limit                                                                        0x0000       2
+hum_limit                                                                         0x0002       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+I_RH                                                                              R5           1
+I_Temp                                                                            R4           1
+pm25_value                                                                        R6,R7        2
+sys_mode                                                                          R2.0      1bit
+ion_state                                                                         R2.1      1bit
+menu_state                                                                        R9           1
+time_10ms_cnt                                                                     R10,R11      2
+time_2s_cnt                                                                       R12,R13      2
+flag_10ms                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x000CA     36
+usart_rx_isr                                                                      0x000EE     68
+DHT_Start                                                                         0x00132      7
+DHT_CheckResponse                                                                 0x00139     31
+DHT_ReadByte                                                                      0x00158     38
+Doc_DHT11                                                                         0x0017E     14
+YeuCau_Doc_PM25                                                                   0x0018C     24
+Quet_NutBam                                                                       0x001A4    122
+XuLy_Logic                                                                        0x0021E     35
+HienThi_LCD                                                                       0x00241    133
+main                                                                              0x002C6     54
+_lcd_write_nibble_G100                                                            0x002FC     37
+_lcd_write_data                                                                   0x00321     12
+lcd_gotoxy                                                                        0x0032D     17
+lcd_clear                                                                         0x0033E     14
+lcd_putchar                                                                       0x0034C     32
+lcd_puts                                                                          0x0036C     17
+lcd_init                                                                          0x0037D     46
+put_buff_G101                                                                     0x003AB     64
+_print_G101                                                                       0x003EB    316
+sprintf                                                                           0x00527     60
+strlen                                                                            0x00563     12
+strlenf                                                                           0x0056F     13
